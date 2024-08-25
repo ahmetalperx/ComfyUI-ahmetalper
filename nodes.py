@@ -20,11 +20,11 @@ def send_image_to_discord_webhook(image, webhook_url):
         buffer.seek(0)
         
         data = {
-            'username': 'Alper'
+            'username' : 'Alper'
         }
         
         files = {
-            'file': ('image.png', buffer, 'image/png')
+            'file' : ('image.png', buffer, 'image/png')
         }
 
         response = requests.post(webhook_url, data = data, files = files)
@@ -45,11 +45,11 @@ class Node_1:
         
         return {
             
-            'required': {
+            'required' : {
                 
-                'image': ('IMAGE',),
-                'webhook_url': ('STRING', {'multiline': False, 'default': ''}),
-                'send': (['yes', 'no'],),  
+                'image' : ('IMAGE',),
+                'webhook_url' : ('STRING', {'multiline' : False, 'default' : ''}),
+                'send' : (['yes', 'no'],),  
                                      
             }
             
