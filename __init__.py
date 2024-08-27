@@ -2,7 +2,7 @@ from .nodes import Node_1
 
 NODE_CLASS_MAPPINGS = {'Node_1' : Node_1}
 
-NODE_DISPLAY_NAME_MAPPINGS = {'Node_1' : 'Send Image to Discord Channel'}
+NODE_DISPLAY_NAME_MAPPINGS = {'Node_1' : 'send image to discord channel'}
 
 print('\033[35m')
 
