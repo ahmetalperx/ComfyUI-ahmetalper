@@ -63,7 +63,13 @@ def download_file(url, download_path, filename, civitai_api_key, overwrite):
 
     if url.startswith('https://civitai.com') and civitai_api_key != '':
 
-        url = f'{url}?token={civitai_api_key}'
+        if '? ' in url:
+
+            url = f'{url}&token={civitai_api_key}'
+
+        else:
+
+            url = f'{url}?token={civitai_api_key}'
 
     print(f'[ INFO ] | url = {url}\n')
     print(f'[ INFO ] | filename = {filename}\n')
