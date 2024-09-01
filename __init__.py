@@ -1,15 +1,17 @@
-from .nodes import Node_1
+from .nodes import Node_1, Node_2
 
-NODE_CLASS_MAPPINGS = {'Node_1' : Node_1}
+NODE_CLASS_MAPPINGS = {'Node_1' : Node_1, 'Node_2' : Node_2}
 
-NODE_DISPLAY_NAME_MAPPINGS = {'Node_1' : 'send image to discord'}
+NODE_DISPLAY_NAME_MAPPINGS = {'Node_1' : 'send image to discord', 'Node_2' : 'download file'}
 
-print('\033[35m')
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
 
-print('#----------#----------#----------#----------#----------#----------#')
+print('\n#------------------------------ << [ ahmetalper ] >> ------------------------------#\n')
 
-print('\n[ ahmetalper ] | Custom nodes loaded.\n')
+for custom_node in NODE_DISPLAY_NAME_MAPPINGS:
 
-print('#----------#----------#----------#----------#----------#----------#')
+    print(f'[ INFO ] | \'{NODE_DISPLAY_NAME_MAPPINGS[custom_node]}\' node loaded.')
 
-print('\033[0m')
+print('\n[ INFO ] | All custom nodes loaded.')
+
+print('\n#------------------------------ << [ ahmetalper ] >> ------------------------------#\n')
