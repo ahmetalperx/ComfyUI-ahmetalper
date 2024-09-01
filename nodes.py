@@ -85,7 +85,7 @@ def download_file(url, download_path, filename, civitai_api_key, overwrite):
                 
                 progress_bar.update(size)
 
-        print(f'\n[ INFO ] | {filename} successfully downloaded to {file_path}.')
+        print(f'\n[ INFO ] | {filename} successfully downloaded to {file_path}')
         
         print('\n#------------------------------ << [ ahmetalper ] >> ------------------------------#\n')
     
