@@ -138,7 +138,7 @@ class Node_2:
                 'image' : ('IMAGE', {}),
                 'url' : ('STRING', {'default' : '', 'tooltip' : 'What is the URL of the file you want to download ?'}),
                 'download_path' : (['models/checkpoints', 'models/loras'], {'tooltip' : 'Where do you want to download the file ?'}),
-                'filename' : ('STRING', {'default' : ''}, {'tooltip' : 'What do you want to name the downloaded file ?'}),
+                'filename' : ('STRING', {'default' : '', 'tooltip' : 'What do you want to name the downloaded file ?'}),
                 'civitai_api_key' : ('STRING', {'default' : '', 'tooltip' : 'For private or login required models, you need to have a Civitai API key.'}),
                 'overwrite' : (['yes', 'no'], {'tooltip' : 'If the file already exists, do you want to overwrite it ?'}),
                 'download' : (['yes', 'no'], {'tooltip' : 'Do you want to download the file ?'})
